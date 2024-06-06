@@ -10,6 +10,18 @@ import re
 import json
 import sys
 
+def banner():
+    # 定义横幅
+    banner = """
+         __  __     ______     __  __     ______     __  __     ______     __  __     ______    
+        /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   
+        \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  
+         \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\ 
+          \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/ 
+                                                                                             
+"""
+    print(banner)
+
 def title():
     print('+------------------------------------------')
     print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
@@ -42,6 +54,7 @@ def POC_1(target_url):
 
 #
 if __name__ == '__main__':
+    banner()
     title()
     target_url = str(input("\033[35mPlease input Attack Url\nUrl   >>> \033[0m"))
     POC_1(target_url)
