@@ -4,15 +4,16 @@ import re
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 def title():
-    print('+------------------------------------------')
-    print('+  \033[34mPOC_Des: http://wiki.peiqi.tech                                   \033[0m')
-    print('+  \033[34mGithub : https://github.com/PeiQi0                                 \033[0m')
-    print('+  \033[34m公众号  : PeiQi文库                                                   \033[0m')
-    print('+  \033[34mVersion: 帆软报表 v8.0                                              \033[0m')
-    print('+  \033[36m使用格式:  python3 poc.py                                            \033[0m')
-    print('+  \033[36mUrl         >>> http://xxx.xxx.xxx.xxx                             \033[0m')
-    print('+------------------------------------------')
-
+    banner = """
+         __  __     ______     __  __     ______     __  __     ______     __  __     ______    
+        /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   
+        \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  \ \  __ \  
+         \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\ \_\ 
+          \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/   \/_/\/_/ 
+                                                                                             
+"""
+    print(banner)
+    
 def decode_passwd(cipher):
     PASSWORD_MASK_ARRAY = [19, 78, 10, 15, 100, 213, 43, 23]  # 掩码
     Password = ""
