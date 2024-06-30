@@ -1,8 +1,16 @@
+#!/usr/bin/python3
+#-*- coding:utf-8 -*-
+# author : PeiQi
+# from   : http://wiki.peiqi.tech
+
 import requests
 import re
 
+"""
+官网url : https://www.jizhicms.cn/
+"""
+
 def main():
-    # 定义横幅
     banner = """
          __  __     ______     __  __     ______     __  __     ______     __  __     ______    
         /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   
@@ -12,6 +20,7 @@ def main():
                                                                                              
 """
     print(banner)
+
 
     while True:
         poc = str(input('选择使用的poc：\n'

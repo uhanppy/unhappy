@@ -7,7 +7,6 @@ import time
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 def title():
-    # 定义横幅
     banner = """
          __  __     ______     __  __     ______     __  __     ______     __  __     ______    
         /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   /\ \_\ \   /\  __ \   
